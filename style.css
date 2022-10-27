@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;0,900;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.85rem;
+    background: rgb(58, 58, 58);
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: 20px;
+}
+.bdr{
+    background: red;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background: rgb(198, 198, 198);
+    /* color: white; */
+}
+
+.gameInfo{
+    /* padding: 0 34px; */
+    width: auto;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.info{
+    margin: 25px;
+    font-size: 20px;
+    font: bolder;
+    font-family: sans-serif;
+    font-size: large;
+}
+.imgbox img{
+    /* display: none; */
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+/* Utility classess */
+.bt{
+    border-top: 0;
+}
+
+.bl{
+    border-left: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+
+.br{
+    border-right: 0;
+}
+
+#reset{
+    margin: 0 23px;
+    padding: 3px 14px;
+    background: #dcb8b8;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+@media screen and (max-width:800px) {
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:425px) {
+    h1{
+        font-size: 1.6rem;
+    }
+
+}
